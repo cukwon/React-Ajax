@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { PostWrapper } from "../../components";
+import { PostWrapper, Navigator,Post } from "../../components";
 
 class PostContainer extends Component {
     render () {
         return (
             <PostWrapper>
-                Hello, Posts
+                <Navigator/>
+                <Post/>
             </PostWrapper>
         );
     };

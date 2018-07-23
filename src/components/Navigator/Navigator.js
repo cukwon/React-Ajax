@@ -1,27 +1,26 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
-import './Navigator.css';
-
+import {Button} from 'semantic-ui-react';
+import './Navigator.css'
 
 const Navigator = () => (
-    <div className='Navigate'>
+    <div className="Navigate">
         <Button
-            color='teal'
-            icon='left arrow'
-            labelPosition="left" >
-            Previous
-        </Button>
+            color="teal"
+            content="Previous"
+            icon="left arrow"
+            labelPosition="left"
+        />
         <div className="Navigate-page-num">
             1
         </div>
         <Button
-            color='teal'
-            icon='right arrow'
+            color="teal"
+            content="Next"
+            icon="right arrow"
             labelPosition="right"
-            className="Navigate-right-button" >
-            Next
-        </Button>
+            className="Navigate-right-button"
+        />
     </div>
 );
 
-export default Navigator
+export default Navigator;

@@ -5,7 +5,6 @@ import {Navigator} from "../index";
 const PostWrapper = ({children}) => {
     return (
         <div className='PostWrapper'>
-            <Navigator/>
             {children}
         </div>
     );
