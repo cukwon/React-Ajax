@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PostWrapper, Navigator,Post } from "../../components";
+import { PostWrapper, Navigator,Post,CommentList } from "../../components";
 
 class PostContainer extends Component {
     render () {
