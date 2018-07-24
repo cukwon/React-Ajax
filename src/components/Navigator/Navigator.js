@@ -2,16 +2,17 @@ import React from 'react';
 import {Button} from 'semantic-ui-react';
 import './Navigator.css'
 
-const Navigator = () => (
+const Navigator = ({postId, onChange}) => (
     <div className="Navigate">
         <Button
             color="teal"
             content="Previous"
             icon="left arrow"
             labelPosition="left"
+            onClick={() => onChange(-1)}
         />
         <div className="Navigate-page-num">
-            1
+            {postId}
         </div>
         <Button
             color="teal"
@@ -19,6 +20,7 @@ const Navigator = () => (
             icon="right arrow"
             labelPosition="right"
             className="Navigate-right-button"
+            onClick={() => onChange(+1)}
         />
     </div>
 );

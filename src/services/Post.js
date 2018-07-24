@@ -1,4 +1,4 @@
-import ajax import 'axios';
+import ajax from 'axios';
 
 export function getPost(postId) {
     return ajax.get('https://jsonplaceholder.typicode.com/posts/'+ postId);

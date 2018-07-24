@@ -2,13 +2,13 @@ import React from 'react';
 import './Post.css';
 import {CommentList} from '../index'
 
-const Post = () => (
+const Post = ({ post, comments}) => (
     <div className="Post">
-        <h1>Title</h1>
+        <h1>{post.title}</h1>
         <p>
-            Body
+            {post.body}
         </p>
-        <CommentList/>
+        <CommentList comments={comments}/>
     </div>
 );
 
